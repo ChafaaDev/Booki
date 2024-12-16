@@ -94,7 +94,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    row-gap: 15px;
+    row-gap: 10px;
     height: 50px;
     width: 758px;
     padding-bottom:20px;
@@ -112,11 +112,13 @@ header{
 .filters button{
     border-radius: 20px;
     font-weight: bold;
-    border: var(--main-bg-color);
+    height: 50px;
+    border: solid var(--main-bg-color);
     cursor: pointer;
     text-align: center;
-    padding: 10px;
+    padding: 5px 19px;
     font-size: 16px;
+    background-color: white;
 }
 .filters button:hover{
     background-color: var(--filter-bg-color);
