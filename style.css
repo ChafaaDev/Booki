@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+
 }
 
 :root {
@@ -25,6 +26,7 @@ header{
     
     
 }
+
 .navbar a{
     margin-left: 100px;
     font-size: 16px;
@@ -124,7 +126,7 @@ a {
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
-    overflow: hidden;
+    
     flex: 1,1,auto;
 }
 .hotel-card{
@@ -184,6 +186,7 @@ a {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
+  
     display: flex;
     justify-content: space-between;
 }
