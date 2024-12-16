@@ -35,6 +35,9 @@ header{
     color: var(--main-color);
     text-decoration-line: overline;
 }
+.search-filters{
+    margin: 0;
+}
  .searchbar{
   
    border-radius: 20px; 
@@ -89,13 +92,22 @@ header{
 .filters{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 15px;
     height: 50px;
     width: 758px;
-    padding:20px;
+    padding-bottom:20px;
     margin-top: 40px;
     margin-left: 0;
+    box-sizing: border-box;
+    
+   
+    
 
+}
+.filters h3{
+    display: inline;
 }
 .filters button{
     border-radius: 20px;
