@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -25,34 +25,35 @@
                 <a href="#">Activités</a>
             </nav>
         </header>
-        
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div class="searchbar">
+            <form class="search-city">
+            <a href="#"><i class="fa-solid fa-location-dot" id="locationDot"></i></a>
+            <label for="Type"></label>
+            <input type="text" id="city">
+            <button id="searchBtn">Rechercher</button>
+            </form>
+        </div>
+                <div class="filters"> 
+                    <h3>Filtres</h3>
+                      <button type="button"><i class="fa-solid fa-money-bill-wave"></i>  Economique</button>
+                      <button type="button"><i class="fa-solid fa-person"></i>  Familial</button>
+                      <button type="button"><i class="fa-solid fa-heart"></i>  Romantique</button>
+                      <button type="button"><i class="fa-solid fa-fire"></i>  Nos pépites</button>
+    
+                </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
       
         
         
            
-            <div class="searchbar">
-                <form class="search-city">
-                <a href="#"><i class="fa-solid fa-location-dot" id="locationDot"></i></a>
-                <label for="Type"></label>
-                <input type="text" id="city">
-                <button id="searchBtn">Rechercher</button>
-                </form>
-                            </div>
-                    <div class="filters"> 
-                        <h3>Filtres</h3>
-                          <button type="button"><i class="fa-solid fa-money-bill-wave"></i>  Economique</button>
-                          <button type="button"><i class="fa-solid fa-person"></i>  Familial</button>
-                          <button type="button"><i class="fa-solid fa-heart"></i>  Romantique</button>
-                          <button type="button"><i class="fa-solid fa-fire"></i>  Nos pépites</button>
-        
-                    </div>
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
+            
+               
                 <main>
                     <div class="hebergements-and-populaires">
-                        <section class="hebergements">
+                            <section class="hebergements">
                         <div class="section-title">
                             <h2>Hébergements à Marseille</h2>
                         </div>
@@ -96,7 +97,7 @@
                                 <a href="#"><h3>Afficher plus</h3></a>
                             </div>
 
-                </section>
+                             </section>
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
