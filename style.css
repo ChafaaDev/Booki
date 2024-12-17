@@ -324,12 +324,12 @@ padding-left: 20px;
     box-sizing: border-box;
 }
 .footer-links ul li{
-   padding: 10px;
+   padding-top: 10px;
  
 }
 .footer-links ul{
     list-style-type: none;
-    text-align: justify;
+   
 }
 .footer-title{
     font-size: 18px;
