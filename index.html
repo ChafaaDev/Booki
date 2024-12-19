@@ -15,49 +15,51 @@
 </head>
 
 <body>
+    
     <div class="main-container">
-        <header>
+        <header id="Top">
             <div class="logoBooki">
                 <img src="images/logo/Booki.png" alt="logoBooki">
             </div>
-            <nav class="navbar">
-                <a href="#hebergements">hébergements</a>
-                <a href="#activites">Activités</a>
-            </nav>
+        
         </header>
+        <nav class="navbar">
+            <a href="#hebergements">Hébergements</a>
+            <a href="#activites">Activités</a>
+        </nav>
         <section class="search-and-filters">
         <div class="searchbar">
             <form class="search-city">
-            <a href="#"><i class="fa-solid fa-location-dot" id="locationDot"></i></a>
-            <label for="Type"></label>
-            <input type="text" id="city">
+            <label for="Type"><a href="#"><i class="fa-solid fa-location-dot" id="locationDot"></i></a></label>
+            <input type="text" id="Type">
             <button id="searchBtn">Rechercher</button>
+            <button id="searchIcon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></i></button>
             </form>
         </div>
                 <div class="filters"> 
                     <h3>Filtres</h3>
-                      <button type="button"><i class="fa-solid fa-money-bill-wave"></i>  Economique</button>
-                      <button type="button"><i class="fa-solid fa-person"></i>  Familial</button>
-                      <button type="button"><i class="fa-solid fa-heart"></i>  Romantique</button>
-                      <button type="button"><i class="fa-solid fa-fire"></i>  Nos pépites</button>
-                   
+                    <button type="button"><i class="fa-solid fa-money-bill-wave"></i>  Economique</button>
+                    <button type="button"><i class="fa-solid fa-person"></i>  Familial</button>
+                    <button type="button"><i class="fa-solid fa-heart"></i>  Romantique</button>
+                    <button type="button"><i class="fa-solid fa-fire"></i>  Nos pépites</button>
+                
                 </div>
                 <p><i class="fa-solid fa-circle-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
         <main>     
             
-               
+            
                     <div class="hebergements-and-populaires">
                             <section class="hebergements" id="hebergements">
                         
                             <h2 class="section-title">Hébergements à Marseille</h2>
-                       
+                    
                         <div class="hebergement-cards">
                             <a href="#">
                                 <div class="hotel-card">
                                 <img src="images/hebergements/annie-spratt.jpg" alt="photo1">
                                     <div class="card-content">
-                                 
+                                
                                     <h3 class="card-title">Hôtel de la mer</h3>
                                 <p class="card-subtitle">Nuit à partir de 52 <span class="euro">€</span></p>
                                 <div class="card-rating">
@@ -67,8 +69,8 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                 </div>
-                                     </div>
-                           
+                                    </div>
+                        
                                 </div>
                             </a>
                             <a href="#">
@@ -143,7 +145,7 @@
                         </div>
                         </a>   
                         <a href="#"> 
-                         <div class="hotel-card">
+                        <div class="hotel-card">
                                 <img src="images/hebergements/fred-kleber.jpg" alt="photo6">
                                 <div class="card-content">
                                 <h3 class="card-title">Hôtel du Port</h3>
@@ -164,11 +166,11 @@
                                 </a>
                             </div>
 
-                           
+                        
                         </div> 
                     </section>
 
-                       <section class="populaires">
+                    <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -236,8 +238,8 @@
             </div>
         
                     
-       <section class="Activities" id="activites">
-       
+    <section class="Activities" id="activites">
+    
                         <h2 class="section-title">Activités à Marseille</h2>
                     
         <div class="activities-cards">
@@ -245,7 +247,7 @@
             <article class="activity-card">
         <img src="images/activites/reno-laithienne.jpg" alt="photo">
         <h3 class="card-title">Vieux-Port</h3>
-         </a>
+        </a>
         </article>
             <a href="#">
                 <article class="activity-card">
@@ -266,8 +268,8 @@
             </article>
             </a>
         </div>
-       </section>
-     </main>
+    </section>
+    </main>
         <footer class="footer-links">
         <div class="a-propos">
             <ul> <span class="footer-title">A propos</span>
@@ -276,20 +278,20 @@
             </a>   
             <a href="#"><li>Conditions générales</li>
             </a>
-           <a href="#"> <li>Données et confidentialité</li>
-           </a>
+        <a href="#"> <li>Données et confidentialité</li>
+        </a>
             </ul>
         </div>
             <div class="nos-hebergements">
                 <ul> <span class="footer-title">Nos hébergements</span>
                 <a href="#"><li>Charte qualité</li>
                 </a>
-               <a href="#">
-                 <li>Proposer votre hôtel</li>
-               </a>
+            <a href="#">
+                <li>Proposer votre hôtel</li>
+            </a>
                 </ul>
             </div>
-             <div class="assistance">
+            <div class="assistance">
                 <ul> <span class="footer-title">Assistance</span>
                 <a href="#">
                     <li>Centre d'aide</li>
@@ -297,8 +299,10 @@
                 <a href="#"><li>Nous contacter</li>
                 </a>
                 </ul>
-             </div>
+            </div>
         </footer>
+        <a href="#Top" id="toTop">  <button id="topBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></button></a>
+            </div>
     </div>
 </body>
 
