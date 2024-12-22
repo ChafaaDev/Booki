@@ -45,9 +45,10 @@ header{
 .navbar a{
     margin-left: 50px;
     font-size: 16px;
-    position: relative;
+    padding: 5px 0;
+    margin-right: auto;
 }
-.navbar a:hover::after{
+/*.navbar a:hover::after{
     content:'';
     background-color: var(--main-color);
     width: 100%;
@@ -56,9 +57,13 @@ header{
     bottom: 50px;
     right: 0;
     position: absolute;   
-}
+}*/
 .navbar a:hover{
     color: var(--main-color);
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    width: fit-content;
+    
 }
 
 .search-and-filter{
@@ -133,7 +138,7 @@ box-sizing: border-box;
     box-sizing: border-box;
     }
 .filters button{
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: bold;
     height: 50px;
     border: solid var(--main-bg-color);
@@ -171,8 +176,8 @@ a {
 }
 .hotel-card{
     flex: 1 1 auto;
-    width: 250px;
-    height: 210px;
+    width: 250.33px;
+    height: 20p7.25px;
     border-radius: 20px;
     transition: 0.3s ease;
     padding: 5px 5px 10px;
@@ -180,25 +185,23 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     
 }
-.hotel-card.card-content{
+.hotel-card .card-content{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    box-sizing: border-box;
+    box-sizing: border-box;  
+    margin: 5px 10px;
 }
 .hotel-card img{
- 
   width: 100%;
   height:124px;
   border-radius: 20px;
   object-fit: cover;
-
-
 }
 
 .hotel-card .card-title{
    margin-top: 4px;
-   margin-bottom: 10px;
+   margin-bottom: -10px;
    
 }
 .hotel-card .card-subtitle{
@@ -307,7 +310,8 @@ a {
 .activities-cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:start;
+    gap:30px;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -386,6 +390,9 @@ padding-left: 20px;
     header{
         width: 100%;
     }
+    .main-container{
+        display: block;
+    }
      .hebergements-and-populaires {
         flex-direction: column;
         width: 100%;
@@ -451,9 +458,17 @@ padding-left: 20px;
         gap: 20px;
         margin-bottom: 50px;
     }
+    .main-container{
+        width: 100%;
+        flex-direction:column ;
+    }
    .populaires-cards{
     display: flex;
     flex-direction: column;
+  
+   }
+   .populaires-cards .card{
+    width: 100vh;
    }
     .hebergement-cards{
         display: flex;
@@ -464,9 +479,7 @@ padding-left: 20px;
         flex-direction: column;
         
     }
-    .hotel-card{
-        width: 100%;
-    }
+
     #searchIcon{
         display: block;
     }
@@ -475,87 +488,66 @@ padding-left: 20px;
     }
 
    .logoBooki{
-    display: flex;
+    display: block;
    }
     .logoBooki img{
     height: 19px;
     width: 61.09px;    
     margin: 10px;
   }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+   align-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-bottom: 5px;
+   }
 
   .navbar a{
-    width: 100vh;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    padding: auto;
-    position: relative;
-    top:30px;
-    flex: 1 1 auto;
+    width:100%;
+    cursor: pointer;
+    
   }
-  
-    .hotel-card{
+ 
+  /*.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }*/
+  .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-top: none;
     width: 100%;
-    height: 207.25px;
-    padding: 5px;
-  }
-  .hotel-card img{
-  width: 100%;
-  height: 200px;
+    
+}
   
-  }
-
   .hebergements-and-populaires section{
     background-color: white;
     width: 100%;
   }
   .hebergements{
-    display: flex;
-    flex-direction: column;
+   
     order: 2;
   }
   .populaires{
-    order: 1;
+     order: 1;
   }
-  .populaires-cards{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
- .populaires-cards article{
-    width: 100%;
-  }
+ 
 
-
-.main-container{
-    width: 100%;
-    flex-direction:column ;
-}
    .logoBooki img{
-    display: inline-block;
-    justify-content: center;
     position: relative;
     left: 250px;
     margin-top: 30px;
    }
-    .navbar{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        margin-top: 50px;
-       }
-
-   .hebergement-cards{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-   }
+ 
+ 
    .hotel-card{
-    width: 591.04px;
-    height: 300.25px;
+    width: 100vh;
+    height: 290.25px;
 
    }
    .hotel-card img{
@@ -563,28 +555,21 @@ padding-left: 20px;
    object-fit:cover;
    height:200px;
    }
-   .hotel-cards.card-content{
+   .hebergement-cards .card-content{
     display:flex ;
     flex-direction: column;
-    align-items:flex-start;
-   
-   }
-  
-   section.populaires{
-    width:100vh;
-    background-color: var(--main-bg-color);
-    border-radius: 0;
+    column-gap: 2px;
+    justify-content: space-between;
+    align-items: flex-start;
    }
    .populaires-cards{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width:fit-content;
     
     
-   }
-   .populaires-cards article.card{
-    width: 90vh;
    }
    .activities-cards{
     width: 100%;
@@ -594,6 +579,7 @@ padding-left: 20px;
    }
    .activity-card{
     width:100vh;
+    
    }
    .activity-card img{
     width: 100%;
@@ -602,7 +588,8 @@ padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100vh;
+    width: 100%;
+    background-color: var(--main-bg-color);
    }
    #searchBtn{
     display: none;
@@ -625,7 +612,7 @@ padding-left: 20px;
     
    }
    .searchbar{
-    width: 100%;
+    width: 100vh;
     background-color: white;
     display: flex;
     background-color: var(--main-bg-color);
@@ -638,12 +625,13 @@ padding-left: 20px;
     
    }
    .filters{
-    width: 100%;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   margin-bottom: 100px;
-   flex:0 1 auto;
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px 10px;
+    justify-content:start;
+    margin-bottom: 100px;
+  
   }
   .filters-title{
   transform: translateY(-40px);
@@ -651,9 +639,9 @@ padding-left: 20px;
   margin-top: 20px;
   }
   .filters button{
-    width: 100%;
-    margin: 0;
-  }
+    width: 47%;
+   height: 50px;
    
 }
 
+}
