@@ -11,6 +11,9 @@
     --otherColor:white;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+}
 
 .fa-solid {
     color: var(--main-color);
