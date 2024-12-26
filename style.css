@@ -16,9 +16,6 @@
     color: var(--main-color);
 }
 
- body{
- 
- } 
     
 
 header{
@@ -396,6 +393,10 @@ padding-left: 20px;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    body{
+        width: 100%;
+        overflow-x: clip;
+    }
     header{
         width: 100%;
         display: flex;
@@ -455,6 +456,9 @@ padding-left: 20px;
     .activities-cards{
     width: 100%;
    
+    }
+    .activities-cards a{
+        width: 100%;
     }
     .activity-card{
         width: 100%;
@@ -530,8 +534,7 @@ padding-left: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        
+        justify-content: space-evenly;    
     }
 
     #searchIcon{
@@ -591,12 +594,9 @@ padding-left: 20px;
      width: 100%;
   }
  
-
    .logoBooki img{
-   
     margin-top: 40px;
    }
- 
  
    .hotel-card{
     width: 100%;
