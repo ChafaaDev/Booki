@@ -43,11 +43,11 @@ header{
     height: 19px;
     width: 61px; 
 }
-.navbar{
-width: 40%;   
+.navbar{  
 display: flex;
 justify-content: flex-end;
 align-items: flex-start;
+margin-right: 20px;
 }
 .navbar ul{
     height: 100px;
@@ -312,8 +312,7 @@ a {
 
 .Activities{
     width: 100%;
-    margin: 0;
-    padding-top: 50px;
+    padding:30px;
    
 }
 .activities-cards{
