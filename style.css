@@ -13,6 +13,7 @@
 }
 body{
     width: 100%;
+    
 }
 
 .fa-solid {
@@ -26,18 +27,13 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin:auto;
-    padding: 5px 
+    padding: 0 50px ;
+    box-sizing: border-box;
 }
 .logoBooki{
     margin-right: auto;
-    margin-left: 2%;
     padding-bottom: 60px;
-    padding-top: 0;
-    padding-left: 20px;
-    width: 50%;
-    
-}
+    }
 
 .logoBooki img{
     height: 19px;
@@ -47,19 +43,14 @@ header{
 display: flex;
 justify-content: flex-end;
 align-items: flex-start;
-margin-right: 20px;
+
 }
 .navbar ul{
     height: 100px;
     list-style-type: none;
     display: flex;
     align-content:flex-end;
-    padding-top:0;
-    margin-top: 0;
-}
-nav li{
-    padding: 0 50px 10px;
-    margin: 0;
+    gap:100px;
 }
 
 .navbar a{
@@ -142,7 +133,7 @@ box-sizing: border-box;
     width: 758px;
     padding-bottom:20px;
     margin-top: 40px;
-    margin-left: 0;
+    margin-bottom: 40px;
     box-sizing: border-box;
 }
 
@@ -258,6 +249,7 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    margin-top: 20px;
 }
 
 /****** Hebergements ***********/
@@ -311,9 +303,16 @@ a {
 }
 
 .Activities{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding:30px;
+    margin-top: 40px;
+    padding: 0 30px 0 25px;
+    box-sizing: border-box;
    
+}
+.Activities-title{
+    width: 100%;
 }
 .activities-cards{
     display: flex;
@@ -324,24 +323,25 @@ a {
     margin-top: 30px;
     margin-bottom: 30px;
    
-   
 }
-
-.activity-card{
+.activities-cards a{
     width: 297px;
+    flex:1 1 auto;
+}
+.activity-card{
+   
     height: 500px;
     border-radius: 20px;
     background-color: white;
     box-sizing: border-box;
     margin-bottom: 40px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    flex: 0 1 auto;
-    flex-wrap: wrap;
+    
 }
 .activity-card img{
     object-fit: cover;
     height: 439px;
-    width:297px;
+    width:100%;
    border-radius: 20px 20px 0 0;
 }
 .activity-card h3{
@@ -399,17 +399,11 @@ padding-left: 20px;
         width: 100%;
         overflow-x: clip;
     }
-    header{
-        width: 100%;
-        display: flex;
-        flex:1;
-    }
-    .main-container{
-        display: block;
-    }
-     .hebergements-and-populaires {
+   
+     .hebergements-and-populaires{
         flex-direction: column;
         width: 100%;
+        justify-content: space-between;
     }
 
     .hebergements {
@@ -459,26 +453,19 @@ padding-left: 20px;
     width: 100%;
    
     }
-    .activities-cards a{
-        width: 100%;
-    }
+    /*.activities-cards a{
+        width: 25%
+    }*/
     .activity-card{
         width: 100%;
         height: 75%;
     }
     .activity-card img {
-        object-fit: cover;
         height: 71%;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
     }
    
-    .filters{
-     width: 100%;
-    display: flex;
-    justify-content:flex-start;
-    gap: 10px;
-    flex-wrap: nowrap;
+    .filters button{
+    width: 24%;
    }
    .filters-title{
    transform: translateY(-40px);
@@ -494,18 +481,15 @@ padding-left: 20px;
 @media (max-width: 767.98px) {
     /* ... */
     body{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+        
         overflow-x: clip;
-        min-width: 300px;
+        min-width: 320px;
     }
     header{
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     form label{
         background-color: var(--main-bg-color);
@@ -516,13 +500,10 @@ padding-left: 20px;
     }
     .main-container{
         width: 100%;
+        min-width: 320px;
     }
-    
-   .populaires-cards{
-    display: flex;
-    flex-direction: column;
   
-   }
+   
    .populaires-cards .card{
     width: 100%;
    }
@@ -549,33 +530,25 @@ padding-left: 20px;
     }
 
    .logoBooki{
-    display: block;
-    margin-bottom: 40px;
-    text-align: right;
-    padding: 0;
-    min-width: 300px;
+    margin: auto;
+    min-width: 320px;
    }
     .logoBooki img{
     height: 19px;
     width: 61.09px;    
-    margin: 10px;
+    
   }
   .navbar{
-   width: 100%;
-   display: flex;
-   min-width: 300px;
+   justify-content: space-around;
+   min-width: 320px;
    }
- .navbar ul{
-    width: 100%;
-    display: flex;
-    gap: 36%;
-    padding:0;
-    margin: auto;
+ .navbar li{
+   
+   margin-right: 3 em;
+   
     
    }
-   nav li{
-    margin: auto;
-   }
+   
    .navbar a:hover{
     color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
@@ -586,14 +559,17 @@ padding-left: 20px;
   .hebergements-and-populaires section{
     background-color: white;
     width: 100%;
+    min-width: 320px;
   }
   .hebergements{
    width: 100%;
     order: 2;
+    min-width: 320px;
   }
   .populaires{
      order: 1;
      width: 100%;
+     min-width: 320px;
   }
  
    .logoBooki img{
@@ -601,56 +577,52 @@ padding-left: 20px;
    }
  
    .hotel-card{
-    width: 100%;
     height: 314.25px;
-    display: flex;
     flex-direction: column;
     padding:5px;
     box-sizing: border-box;
 
    }
+   .hebergement-cards a{
+    width: 100%;
+   }
    .hotel-card img{
     width:100%;
-   object-fit:cover;
    height:226px;
    }
 
-   .hebergement-cards .card-content{
-    display:flex ;
-    flex-direction: column;
-    column-gap: 2px;
-    justify-content: space-between;
-    align-items: flex-start;
-   }
+   
    .hebergement-cards a{
     width: 100%;
    }
 
    .populaires-cards{
     width: 100%;
-    display: block;
+   flex-direction: column;
    }
+    
+   .populaires-cards a{
+    width: 100%;
+}
 
    .activities-cards{
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+   
+   }
+   .activities-cards a{
+    width: 100%;
    }
    .activity-card{
-    width:100%;
     height: 314.25px;
    }
    .activity-card img{
-    width: 100%;
+   
     height: 264px;
    }
    .footer-links{
-    display: flex;
+    
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    background-color: var(--main-bg-color);
     padding: 0;
    }
    #searchBtn{
@@ -692,10 +664,9 @@ padding-left: 20px;
    }
    .filters{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap:30px 25px;
-    justify-content:start;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-bottom: 135px;
     margin-top: 75px;
   }
@@ -705,13 +676,11 @@ padding-left: 20px;
   margin-top: 20px;
   }
   .filters button{
-    width: 47%;
+    width: 95%;
    height: 60px;
    
 }
-a {
-    width: 100%;
-    cursor: pointer;
-}
+
 
 }
+
