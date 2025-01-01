@@ -13,7 +13,10 @@
 }
 body{
     width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
 }
 
 .fa-solid {
@@ -24,6 +27,7 @@ body{
 
 header{
     width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -51,22 +55,22 @@ align-items: flex-start;
     display: flex;
     align-content:flex-end;
     gap:100px;
+    margin-top: 0;
 }
 
-.navbar a{
+.navbar a li{
     font-size: 16px;
     padding: 10px 0;
-    transition: background-colore 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.navbar a:hover{
-    color: var(--main-color);
+.navbar a li:hover{
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
     width:100%;    
 }
 
-.search-and-filter{
+.search-and-filters{
 display:flex ;
 flex-direction: column;
 width: 100%;
@@ -95,6 +99,7 @@ box-sizing: border-box;
     height: 44px;
     width: 220px;
     border: var(--main-bg-color);
+    padding-left: 1em;
    
 }
 #locationDot{
@@ -139,7 +144,7 @@ box-sizing: border-box;
 
 .filters button{
     border-radius: 25px;
-    font-weight: bold;
+    font-weight: 700;
     height: 50px;
     border: solid var(--main-bg-color);
     cursor: pointer;
@@ -481,13 +486,11 @@ padding-left: 20px;
 @media (max-width: 767.98px) {
     /* ... */
     body{
-        
         overflow-x: clip;
         min-width: 320px;
+        margin-right: auto;
     }
     header{
-        width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -499,8 +502,8 @@ padding-left: 20px;
         margin-left: -26px;
     }
     .main-container{
-        width: 100%;
         min-width: 320px;
+        padding: 0;
     }
   
    
@@ -508,16 +511,12 @@ padding-left: 20px;
     width: 100%;
    }
     .hebergement-cards{
-        display: flex;
         flex-direction:column;
-        align-items: start;
         width: 100%;
     }
     .activities-cards{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;    
+          
     }
 
     #searchIcon{
@@ -531,40 +530,47 @@ padding-left: 20px;
 
    .logoBooki{
     margin: auto;
-    min-width: 320px;
    }
     .logoBooki img{
     height: 19px;
     width: 61.09px;    
     
   }
-  .navbar{
-   justify-content: space-around;
-   min-width: 320px;
-   }
- .navbar li{
+  .navbar ul{
+    padding: 0;
+    gap:1px;
+    margin: 0;
+  }
+  .navbar li{
+    text-align: center;
+    width: 48vw;
+  }
+ 
+ .navbar a{
    
-   margin-right: 3 em;
+    padding: 7px 0;
    
     
    }
    
-   .navbar a:hover{
-    color: var(--main-color);
-    border-bottom: 2px solid var(--main-color);
+   .navbar a li:hover{
+    width: 48vw;
+    border-bottom: 3px solid var(--main-color);
     border-top: none;
-    width: 100%;
 }
   
-  .hebergements-and-populaires section{
+  .hebergements-and-populaires .hebergements{
     background-color: white;
-    width: 100%;
-    min-width: 320px;
+   
+  }
+  .hebergements-and-populaires .populaires{
+    background-color: var(--main-bg-color);
+    border-radius: 0;
   }
   .hebergements{
-   width: 100%;
+
     order: 2;
-    min-width: 320px;
+    
   }
   .populaires{
      order: 1;
@@ -673,11 +679,11 @@ padding-left: 20px;
   .filters-title{
   transform: translateY(-40px);
   position: absolute;
-  margin-top: 20px;
   }
   .filters button{
     width: 95%;
    height: 60px;
+   font-size: 14px;
    
 }
 
