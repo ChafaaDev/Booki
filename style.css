@@ -1,7 +1,7 @@
 /****** General ***********/
 * {
 font-family: 'Raleway', sans-serif;
-
+box-sizing: border-box;
 }
 
 :root {
@@ -9,7 +9,6 @@ font-family: 'Raleway', sans-serif;
 --main-bg-color: #F2F2F2;
 --filter-bg-color: #DEEBFF;
 --otherColor:white;
-box-sizing: border-box;
 }
 body{
 width: 100%;
@@ -30,7 +29,6 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 padding: 0 50px ;
-box-sizing: border-box;
 }
 .logoBooki{
 margin-right: auto;
@@ -103,14 +101,11 @@ padding-left: 1em;
 #locationDot{
 color: black;
 padding-right: 15px;
-height: 18px;
-width: 14px;
 }
 #searchBtn{
 background-color: var(--main-color);
 width: 132px;
 height: 49px;
-
 border-radius: 0 20px 20px 0;
 color: white;
 cursor: pointer;
@@ -118,7 +113,6 @@ border: none;
 font-weight: bold;
 font-size: 16px;  
 }
-
 
 .searchbar.search-city a{
 height: 49px;
@@ -150,6 +144,8 @@ text-align: center;
 padding: 5px 19px;
 font-size: 16px;
 background-color: white;
+text-wrap-mode: nowrap;
+margin-block: 20px;
 }
 
 .filters button:hover{
@@ -167,7 +163,9 @@ a {
 color: inherit;
 text-decoration: none;
 }
-
+.hebergements a{
+    flex-basis: 30%;
+}
 .hebergement-cards{
 display: flex;
 flex-wrap: wrap;
@@ -180,8 +178,8 @@ margin-top: 30px;
 
 .hotel-card{
 flex: 1 1 auto;
-width: 250.33px;
-height: 207.25px;
+width: 100%;
+height: 212px;
 border-radius: 20px;
 padding: 5px 5px 10px;
 background-color: white;
@@ -191,9 +189,8 @@ filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 .hotel-card .card-content{
 display: flex;
 flex-direction: column;
-justify-content:space-between;
-box-sizing: border-box;  
-margin: 5px 10px;
+justify-content:space-between; 
+text-wrap-mode: nowrap;
 }
 .hotel-card img{
 width: 100%;
@@ -489,12 +486,13 @@ height: 71%;
 }
 .filters{
 width: 97%;
+margin-block: 30px;
 }
 .filters button{
 width: 24%;
 }
 .filters-title{
-transform: translateY(-40px);
+transform: translateY(-14px);
 position: absolute;
 margin-top: 20px;
 }
@@ -644,11 +642,11 @@ flex-direction: column;
 width: 100%;
 }
 .activity-card{
-height: 314.25px;
+height: 353.25px;
 }
 .activity-card img{
 
-height: 264px;
+height: 300px;
 }
 .footer-links{
 
@@ -689,7 +687,7 @@ display: flex;
 }
 .searchbar form input{
 width: 100%;
-height: 100%;
+height: 54px;
 border: 2px solid var(--main-bg-color);
 border-right: none;
 }
@@ -698,7 +696,7 @@ width: 100%;
 display:grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr;
-margin-bottom: 135px;
+margin-bottom: 75px;
 margin-top: 75px;
 }
 .filters-title{
@@ -707,10 +705,9 @@ position: absolute;
 }
 .filters button{
 width: 95%;
-height: 60px;
-font-size: 14px;
-
+margin:0;
 }
+
 .search-and-filters{
 margin-left: 10px;
 }
