@@ -310,7 +310,7 @@ margin-bottom: 5px;
 display: flex;
 flex-direction: column;
 width: 100%;
-margin-top: 40px;
+margin-block: 40px;
 padding: 0 30px 0 25px;
 box-sizing: border-box;
 
@@ -329,7 +329,7 @@ margin-bottom: 30px;
 
 }
 .activities-cards a{
-width: 297px;
+width:25%;
 flex:1 1 auto;
 }
 .activity-card{
@@ -338,18 +338,18 @@ height: 500px;
 border-radius: 20px;
 background-color: white;
 box-sizing: border-box;
-margin-bottom: 40px;
 filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
 }
 .activity-card img{
 object-fit: cover;
-height: 439px;
+height: 88%;
 width:100%;
 border-radius: 20px 20px 0 0;
 }
 .activity-card h3{
-padding-left: 20px;
+padding: .5em;
+margin: auto;
 }
 .afficher-plus h3{
 font-size: 18px;
