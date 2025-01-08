@@ -17,6 +17,7 @@ flex-direction: column;
 justify-content:center ;
 align-items: center;
 min-height: 1110px;
+overflow-x: clip;
 }
 
 .fa-solid {
