@@ -394,8 +394,10 @@ margin-left: 25px ;
 height: 49px;
 width: 132px;
 background-color: #0065FC;
-color: white;
 border-radius: 0 20px 20px 0;
+}
+#loupe{
+    color: white;
 }
 .info-icon{
 height: 20px;
